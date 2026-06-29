@@ -411,72 +411,55 @@
   </section>
 
   <!-- ─── S2B: GEN AI vs AGENTIC AI ─── -->
-  <section class="slide" id="s2b" style="padding:0; overflow:hidden">
-    <div style="display:grid; grid-template-columns:1fr 1fr; height:100%">
+  <section class="slide" id="s2b">
+    <div class="eyebrow" style="margin-bottom:36px">02 · THE DIFFERENCE</div>
 
-      <!-- LEFT: Gen AI -->
-      <div style="padding:56px 52px; display:flex; flex-direction:column; justify-content:space-between; border-right:1px solid var(--border)">
-        <div>
-          <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:var(--gray); margin-bottom:28px">GENERATIVE AI</div>
-          <div class="display display-lg" style="color:var(--gray); line-height:1.1; margin-bottom:24px">It<br>responds.</div>
-          <p class="body-lg" style="color:var(--gray)">You ask. It answers. You take that answer and do the rest yourself.</p>
-        </div>
-
-        <div style="border-top:1px solid var(--border); padding-top:32px">
-          <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; color:var(--gray); margin-bottom:20px">EXAMPLE — PLANNING A TRIP</div>
-          <div style="display:flex; flex-direction:column; gap:14px">
-            <div style="display:flex; gap:16px; align-items:flex-start">
-              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--gray); padding-top:2px; flex-shrink:0">YOU</div>
-              <p class="body-md" style="color:var(--gray)">"Write me a travel itinerary for Goa"</p>
-            </div>
-            <div style="display:flex; gap:16px; align-items:flex-start">
-              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--gray); padding-top:2px; flex-shrink:0">AI&nbsp;&nbsp;</div>
-              <p class="body-md" style="color:var(--gray)">Gives you a list. You still search flights, compare hotels, check availability, and book everything yourself.</p>
-            </div>
-          </div>
-          <div style="margin-top:24px; padding:14px 18px; background:var(--dim); border-radius:4px">
-            <p style="font-family:'Manrope',sans-serif; font-size:13px; color:var(--gray)">You got words. You still do the work.</p>
-          </div>
-        </div>
+    <!-- Top: big contrast labels -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-bottom:2px">
+      <div style="padding:28px 32px; background:var(--dim)">
+        <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:var(--gray); margin-bottom:12px">GENERATIVE AI</div>
+        <div class="display display-md" style="color:var(--gray)">It responds.</div>
+        <p class="body-md mt-12" style="color:var(--gray)">You ask, it answers. You still do everything with that answer.</p>
       </div>
-
-      <!-- RIGHT: Agentic AI -->
-      <div style="padding:56px 52px; display:flex; flex-direction:column; justify-content:space-between; background:#0d0d0d">
-        <div>
-          <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:var(--lime); margin-bottom:28px">AGENTIC AI</div>
-          <div class="display display-lg accent" style="line-height:1.1; margin-bottom:24px">It<br>acts.</div>
-          <p class="body-lg">You set a goal. It plans, decides, uses tools, and delivers the outcome.</p>
-        </div>
-
-        <div style="border-top:1px solid var(--border); padding-top:32px">
-          <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; color:var(--lime); margin-bottom:20px">SAME EXAMPLE</div>
-          <div style="display:flex; flex-direction:column; gap:14px">
-            <div style="display:flex; gap:16px; align-items:flex-start">
-              <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--lime); padding-top:2px; flex-shrink:0">YOU</div>
-              <p class="body-md">"Plan my Goa trip next weekend under ₹15k"</p>
-            </div>
-            <div style="display:flex; flex-direction:column; gap:8px">
-              <div style="display:flex; gap:16px; align-items:center">
-                <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--lime); flex-shrink:0">AI&nbsp;&nbsp;</div>
-                <p class="body-md" style="color:var(--gray)">Searches flights and finds cheapest option</p>
-              </div>
-              <div style="display:flex; gap:16px; align-items:center">
-                <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--lime); flex-shrink:0">AI&nbsp;&nbsp;</div>
-                <p class="body-md" style="color:var(--gray)">Compares hotels within budget</p>
-              </div>
-              <div style="display:flex; gap:16px; align-items:center">
-                <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--lime); flex-shrink:0">AI&nbsp;&nbsp;</div>
-                <p class="body-md" style="color:var(--gray)">Books and adds to your calendar</p>
-              </div>
-            </div>
-          </div>
-          <div style="margin-top:24px; padding:14px 18px; background:rgba(200,255,0,0.08); border:1px solid var(--lime); border-radius:4px">
-            <p style="font-family:'Manrope',sans-serif; font-size:13px; font-weight:600; color:var(--lime)">You got a booked trip. Done.</p>
-          </div>
-        </div>
+      <div style="padding:28px 32px; background:var(--dim); border-left:3px solid var(--lime)">
+        <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:3px; color:var(--lime); margin-bottom:12px">AGENTIC AI</div>
+        <div class="display display-md accent">It acts.</div>
+        <p class="body-md mt-12">You set a goal. It plans, uses tools, and delivers the outcome.</p>
       </div>
-
     </div>
+
+    <!-- Bottom: same example, two outcomes -->
+    <div style="border:1px solid var(--border); padding:28px 32px; margin-bottom:2px">
+      <div style="font-family:'Manrope',sans-serif; font-size:10px; font-weight:700; letter-spacing:2px; color:var(--gray); margin-bottom:16px">SAME PROMPT — "Plan my Goa trip next weekend under ₹15k"</div>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:40px">
+        <div>
+          <p class="body-md" style="color:var(--gray); margin-bottom:12px">Generative AI gives you a nicely formatted list of suggestions. You then open 5 tabs, search flights, compare hotels, check dates, and book everything yourself.</p>
+          <div style="padding:12px 16px; background:var(--dim); border-radius:3px">
+            <p style="font-family:'Manrope',sans-serif; font-size:12px; color:var(--gray); font-weight:500">You got text. You still do the work.</p>
+          </div>
+        </div>
+        <div>
+          <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:12px">
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--lime); flex-shrink:0"></div>
+              <p class="body-md" style="color:var(--gray)">Searches flights, picks the cheapest</p>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--lime); flex-shrink:0"></div>
+              <p class="body-md" style="color:var(--gray)">Finds hotels within budget</p>
+            </div>
+            <div style="display:flex; gap:12px; align-items:center">
+              <div style="width:6px; height:6px; border-radius:50%; background:var(--lime); flex-shrink:0"></div>
+              <p class="body-md" style="color:var(--gray)">Books and adds to your calendar</p>
+            </div>
+          </div>
+          <div style="padding:12px 16px; background:rgba(200,255,0,0.08); border:1px solid var(--lime); border-radius:3px">
+            <p style="font-family:'Manrope',sans-serif; font-size:12px; font-weight:600; color:var(--lime)">You got a booked trip. Done.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 
   <!-- ─── S3: WHAT IS AGENTIC ─── -->
