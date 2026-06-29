@@ -633,45 +633,44 @@
 
   <!-- ─── S9: REAL EXAMPLE — left flow / right tool list ─── -->
   <section class="slide" id="s9">
-    <div style="display:grid; grid-template-columns:1fr 1.6fr; gap:80px; height:100%; align-items:center">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:80px; height:100%; align-items:center">
 
       <div>
-        <div class="eyebrow" style="margin-bottom:16px">08 · EXAMPLE</div>
-        <div class="display display-lg">Order<br><span class="accent">Support</span><br>Agent</div>
-        <div style="margin-top:32px; display:flex; flex-direction:column; gap:10px">
-          <div class="s9-flow">User: "Where is my order?"</div>
-          <div class="s9-arrow">↓</div>
-          <div class="s9-flow">LLM decides: call get_order()</div>
-          <div class="s9-arrow">↓</div>
-          <div class="s9-flow">Tool returns status + ETA</div>
-          <div class="s9-arrow">↓</div>
-          <div class="s9-flow s9-flow-lime">Agent replies with real data</div>
-        </div>
+        <div class="eyebrow" style="margin-bottom:20px">08 · REAL EXAMPLE</div>
+        <div class="display display-lg">Meet your<br><span class="accent">AI</span><br>teammate.</div>
+        <p class="body-lg mt-24" style="max-width:340px; color:var(--gray)">You give it a goal. It figures out how to get there.</p>
       </div>
 
       <div>
-        <div class="eyebrow" style="margin-bottom:20px">TOOLS THE AGENT CAN CALL</div>
-        <div class="s9-tool" style="border-top:1px solid var(--border)">
-          <span class="s9-fn accent">get_order(order_id)</span>
-          <span class="s9-tdesc">Fetch order status, ETA, and tracking link</span>
+        <div class="eyebrow" style="margin-bottom:24px">YOU SAY: "Prep me for tomorrow's user interview"</div>
+        <div class="s9-tool" style="border-top:1px solid var(--border); padding:24px 0">
+          <div style="width:28px; height:28px; border-radius:50%; background:var(--lime); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--black); flex-shrink:0">1</div>
+          <div>
+            <div style="color:var(--white); font-weight:600; margin-bottom:4px">Finds the user's profile</div>
+            <div class="s9-tdesc">Pulls their background from your notes and CRM</div>
+          </div>
         </div>
-        <div class="s9-tool">
-          <span class="s9-fn">cancel_order(order_id)</span>
-          <span class="s9-tdesc">Cancel if within the cancellation window</span>
+        <div class="s9-tool" style="padding:24px 0">
+          <div style="width:28px; height:28px; border-radius:50%; background:var(--lime); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--black); flex-shrink:0">2</div>
+          <div>
+            <div style="color:var(--white); font-weight:600; margin-bottom:4px">Checks their recent activity</div>
+            <div class="s9-tdesc">Looks at what features they used and where they dropped off</div>
+          </div>
         </div>
-        <div class="s9-tool">
-          <span class="s9-fn">issue_refund(order_id)</span>
-          <span class="s9-tdesc">Trigger refund to original payment method</span>
+        <div class="s9-tool" style="padding:24px 0">
+          <div style="width:28px; height:28px; border-radius:50%; background:var(--lime); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--black); flex-shrink:0">3</div>
+          <div>
+            <div style="color:var(--white); font-weight:600; margin-bottom:4px">Reads past feedback</div>
+            <div class="s9-tdesc">Scans previous interview notes and support tickets</div>
+          </div>
         </div>
-        <div class="s9-tool">
-          <span class="s9-fn">search_faq(query)</span>
-          <span class="s9-tdesc">Answer policy questions from knowledge base</span>
+        <div class="s9-tool" style="border-bottom:none; padding:24px 0">
+          <div style="width:28px; height:28px; border-radius:50%; background:var(--lime); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--black); flex-shrink:0">4</div>
+          <div>
+            <div style="color:var(--lime); font-weight:600; margin-bottom:4px">Writes your briefing doc</div>
+            <div class="s9-tdesc">Delivers a ready-to-use doc in your Notion, before you even open it</div>
+          </div>
         </div>
-        <div class="s9-tool" style="border-bottom:none">
-          <span class="s9-fn">escalate_to_human()</span>
-          <span class="s9-tdesc">Hand off to a live agent when confidence is low</span>
-        </div>
-        <p class="body-sm mt-24 accent">Five tools. One agent. Handles 80% of support tickets.</p>
       </div>
 
     </div>
